@@ -92,6 +92,13 @@ bash ./cypress/scripts/upload-results-local.sh
 
 This script processes the merged XML reports and uploads the test results to TestRail, maintaining traceability between your automated tests and TestRail test cases. Make sure to configure your TestRail credentials in the environment variables before running this command.
 
+### Slack Notifications
+The test execution pipeline automatically sends notifications to Slack with the test results summary:
+
+![Slack Notification](slackmessage.png)
+
+This notification provides quick visibility of test execution status to the team, including pass/fail counts and any critical failures.
+
 ## Target Application
 
 The tests are designed for the Molly Storm webapp:
