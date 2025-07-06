@@ -155,7 +155,7 @@ jobs:
         if: always()
         uses: rtCamp/action-slack-notify@v2
         env:
-          SLACK_CHANNEL: '#example-channel'
+          SLACK_CHANNEL: '#epractice-automation'
           SLACK_WEBHOOK: ${{ secrets.SLACK_CYPRESS_WEBHOOK }}
           SLACK_COLOR: ${{ steps.cypress.outcome == 'success' && 'good' || 'danger' }}
           SLACK_TITLE: Cypress Regression Tests Results
