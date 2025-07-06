@@ -1,0 +1,25 @@
+{
+  "name": "webapp-molly-cypress-main",
+  "version": "1.0.0",
+  "description": "Cypress test in a webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Hcarvacg@github.com/hcarga/webapp-Molly-Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcarga/webapp-Molly-Cypress/issues"
+  },
+  "homepage": "https://github.com/hcarga/webapp-Molly-Cypress#readme",
+  "devDependencies": {
+    "cypress": "^14.5.1",
+    "mocha-junit-reporter": "^2.2.1",
+    "xml2js": "^0.6.2"
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results - Login Scenarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .summary {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .test-case {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .test-case.failed {
+            border-left: 5px solid #dc3545;
+        }
+        .test-case.passed {
+            border-left: 5px solid #28a745;
+        }
+        .failure-message {
+            background-color: #fff3f3;
+            padding: 10px;
+            border-left: 3px solid #dc3545;
+            margin-top: 10px;
+        }
+        .stack-trace {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .metadata {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .stat-item {
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .total { background-color: #e9ecef; }
+        .failures { background-color: #f8d7da; }
+        .duration { background-color: #e9ecef; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Results - Login Scenarios</h1>
+        
+        <div class="summary">
+            <div class="stats">
+                <div class="stat-item total">
+                    <strong>Total Tests:</strong> 3
+                </div>
+                <div class="stat-item failures">
+                    <strong>Failures:</strong> 3
+                </div>
+                <div class="stat-item duration">
+                    <strong>Duration:</strong> 32.546s
+                </div>
+            </div>
+        </div>
+
+        <div class="test-case failed">
+            <h3>Validation message for empty submission</h3>
+            <div class="metadata">
+                <strong>Tags:</strong> @regression @smoke<br>
+                <strong>Duration:</strong> 10.756s
+            </div>
+            <div class="failure-message">
+                <strong>Failure:</strong> Timed out retrying after 10000ms: Expected to find element: [data-testid="siteMembersDialogLayout"], but never found it.
+            </div>
+            <div class="stack-trace">at login.loginEmptyValidation (webpack://webapp-molly-cypress-main/./cypress/PageObjects/Login.js:20:31)
+at Context.eval (webpack://webapp-molly-cypress-main/./cypress/e2e/Specs-Tests/Login.cy.js:19:7)</div>
+        </div>
+
+        <div class="test-case failed">
+            <h3>Forgot password button should open forgot password</h3>
+            <div class="metadata">
+                <strong>Tags:</strong> @regression @smoke<br>
+                <strong>Duration:</strong> 10.771s
+            </div>
+            <div class="failure-message">
+                <strong>Failure:</strong> Timed out retrying after 10000ms: Expected to find element: [data-testid="forgotPasswordMobile"], but never found it.
+            </div>
+            <div class="stack-trace">at login.goToForgotPassword (webpack://webapp-molly-cypress-main/./cypress/PageObjects/Login.js:28:9)
+at Context.eval (webpack://webapp-molly-cypress-main/./cypress/e2e/Specs-Tests/Login.cy.js:24:7)</div>
+        </div>
+
+        <div class="test-case failed">
+            <h3>Login success</h3>
+            <div class="metadata">
+                <strong>Tags:</strong> @regression @smoke<br>
+                <strong>Duration:</strong> 11.019s
+            </div>
+            <div class="failure-message">
+                <strong>Failure:</strong> Timed out retrying after 10000ms: Expected to find element: [data-testid="signUp.switchToSignUp"], but never found it.
+            </div>
+            <div class="stack-trace">at Context.eval (webpack://webapp-molly-cypress-main/./cypress/support/commands.js:36:9)
+at getRet (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:120949:20)
+at tryCatcher (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:1777:23)
+at Promise.attempt.Promise.try (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:4285:29)
+at Context.thenFn (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:120960:66)
+at Context.then (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:121211:21)
+at wrapped (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:141532:19)</div>
+        </div>
+    </div>
+</body>
+</html>

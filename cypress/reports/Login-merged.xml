@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="3" failures="3" errors="0" skipped="0" time="32.546"><testsuite name="Root Suite" timestamp="2025-07-06T16:25:22" tests="0" file="cypress/e2e/Specs-Tests/Login.cy.js" time="0" failures="0" errors="0" skipped="0">
+  </testsuite>
+  <testsuite name="Login scenarios" timestamp="2025-07-06T16:25:22" tests="3" time="32.546" failures="3" errors="0" skipped="0">
+    <testcase name="Login scenarios [TestRailId] Validation message for empty submission @regression @smoke" time="10.756" classname="[TestRailId] Validation message for empty submission @regression @smoke">
+      <failure message="Timed out retrying after 10000ms: Expected to find element: `[data-testid=&quot;siteMembersDialogLayout&quot;]`, but never found it." type="AssertionError">AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid="siteMembersDialogLayout"]`, but never found it.
+    at login.loginEmptyValidation (webpack://webapp-molly-cypress-main/./cypress/PageObjects/Login.js:20:31)
+    at Context.eval (webpack://webapp-molly-cypress-main/./cypress/e2e/Specs-Tests/Login.cy.js:19:7)</failure>
+    </testcase>
+    <testcase name="Login scenarios [TestRailId] Forgot password button should open forgot password @regression @smoke" time="10.771" classname="[TestRailId] Forgot password button should open forgot password @regression @smoke">
+      <failure message="Timed out retrying after 10000ms: Expected to find element: `[data-testid=&quot;forgotPasswordMobile&quot;]`, but never found it." type="AssertionError">AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid="forgotPasswordMobile"]`, but never found it.
+    at login.goToForgotPassword (webpack://webapp-molly-cypress-main/./cypress/PageObjects/Login.js:28:9)
+    at Context.eval (webpack://webapp-molly-cypress-main/./cypress/e2e/Specs-Tests/Login.cy.js:24:7)</failure>
+    </testcase>
+    <testcase name="Login scenarios [TestRailId] Login success @regression @smoke" time="11.019" classname="[TestRailId] Login success @regression @smoke">
+      <failure message="Timed out retrying after 10000ms: Expected to find element: `[data-testid=&quot;signUp.switchToSignUp&quot;]`, but never found it." type="AssertionError">AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid="signUp.switchToSignUp"]`, but never found it.
+    at Context.eval (webpack://webapp-molly-cypress-main/./cypress/support/commands.js:36:9)
+    at getRet (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:120949:20)
+    at tryCatcher (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise.attempt.Promise.try (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:4285:29)
+    at Context.thenFn (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:120960:66)
+    at Context.then (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:121211:21)
+    at wrapped (https://riveravargasmiguel.wixsite.com/__cypress/runner/cypress_runner.js:141532:19)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
