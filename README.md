@@ -76,7 +76,7 @@ These reports can be found in the `cypress/reports` directory.
 #### HTML Report View
 An HTML version of the test results is also generated for better visualization:
 
-![HTML Report View](html-reportversion.png)
+![HTML Report View](cypress/reports/html-reportversion.png)
 
 The HTML report provides a clean, formatted view of:
 - Test suite summary statistics
