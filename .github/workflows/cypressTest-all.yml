@@ -12,10 +12,10 @@ on:
       tag:
         description: 'Select the test suite to run (only if using tags)'
         required: false
-        default: ''
+        default: 'no-tag'
         type: choice
         options:
-          - none
+          - no-tag
           - smoke
           - e2e
       spec:
